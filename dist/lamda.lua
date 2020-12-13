@@ -22,7 +22,9 @@
 
 local R = {}
 
-math.randomseed(os.time())
+if os then
+	math.randomseed(os.time())
+end
 
 -- ===========================================
 -- ================ Constants ================
