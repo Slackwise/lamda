@@ -22,6 +22,10 @@
 
 local R = {}
 
+if not require then
+	_G.LAMDA = R
+end
+
 if os then
 	math.randomseed(os.time())
 end
